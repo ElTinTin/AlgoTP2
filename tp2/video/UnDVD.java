@@ -1,3 +1,5 @@
+package tp2.video;
+
 
 
 public class UnDVD
@@ -59,7 +61,7 @@ public class UnDVD
          this.NbEmprunts = this.NbEmprunts - 1;
       }
       else {
-         System.out.println("Tous les exemplaires ont été rendus.");
+         System.out.println("Tous les exemplaires ont ï¿½tï¿½ rendus.");
       }
    }
 

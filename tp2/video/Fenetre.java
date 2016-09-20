@@ -1,3 +1,5 @@
+package tp2.video;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,7 +18,7 @@ public class Fenetre extends JFrame implements ActionListener
     
     private Image im;
         
-                                          // Structure de données ici
+                                          // Structure de donnï¿½es ici
 	 
     
 // CONSTRUCTEUR 
@@ -43,7 +45,7 @@ public class Fenetre extends JFrame implements ActionListener
         repaint();        
     }
     
-// la fenetre est constituée de trois parties Panel Nord : boutons ; Sud : boutons; Centre: zone de zoneDessin
+// la fenetre est constituï¿½e de trois parties Panel Nord : boutons ; Sud : boutons; Centre: zone de zoneDessin
     public void mise_en_page(int maxX, int maxY) 
     {
         //--------------------------------------------------------------------
@@ -73,12 +75,12 @@ public class Fenetre extends JFrame implements ActionListener
         setVisible(true);
     }
    
-    // Accesseur au zoneDessin de la fenêtre
+    // Accesseur au zoneDessin de la fenï¿½tre
     public Graphics getzoneDessin() {
         return this.zoneDessin.getGraphics();
     }
     
-    // Procédure d'arrêt
+    // Procï¿½dure d'arrï¿½t
     void quitter() {
         System.exit(0);
     }
@@ -98,7 +100,7 @@ public class Fenetre extends JFrame implements ActionListener
     } 
     
        
-    public void paint(Graphics g)  // dessin de la fenêtre générale
+    public void paint(Graphics g)  // dessin de la fenï¿½tre gï¿½nï¿½rale
     {
          this.p1.repaint();  // on redessine les boutons hauts
          this.p2.repaint();  // on redessine les boutons bas
@@ -106,7 +108,7 @@ public class Fenetre extends JFrame implements ActionListener
          g= this.zoneDessin.getGraphics(); // on redessine dans le panel de dessin
          
          effacer();
-         // c'est ici qu'il faut mettre les elements à afficher
+         // c'est ici qu'il faut mettre les elements ï¿½ afficher
                  
          Font StyleLesTitres = new Font("TimesRoman",Font.BOLD,18); // trois styles d'ecriture
 			Font StyleMoyen = new Font("TimesRoman", Font.ITALIC,14);
@@ -124,7 +126,7 @@ public class Fenetre extends JFrame implements ActionListener
     
     }
     
-    // GESTION DES ACTIONS SUITE A UN APPUIS SUR BOUTON : cette methode est declenchée si Un bouton quelconque est appuyé
+    // GESTION DES ACTIONS SUITE A UN APPUIS SUR BOUTON : cette methode est declenchï¿½e si Un bouton quelconque est appuyï¿½
     public void actionPerformed(ActionEvent e)  // on associe l'evenement souris sur bouton avec l'execution d'un sous prg
 	 {
       String c = e.getActionCommand();     // on capte l'evenement : nom du bouton !

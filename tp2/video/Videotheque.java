@@ -1,3 +1,5 @@
+package tp2.video;
+
 import java.util.ArrayList;
 import java.io.*;
 
@@ -81,9 +83,9 @@ public class Videotheque
       StreamTokenizer entree = new StreamTokenizer(fic);	// intermediaire avec FileReader
       entree.quoteChar('"');
    	
-   // lecture des données dans le fichier connaissant le format-----------------------------------------------------
+   // lecture des donnï¿½es dans le fichier connaissant le format-----------------------------------------------------
       int i =0;
-      entree.nextToken() ;							// on passe à l'element suivant
+      entree.nextToken() ;							// on passe ï¿½ l'element suivant
       while ( entree.ttype != entree.TT_EOF ) // c'est la fin du fichier ou pb ?
       {  	  
          LeTitre = entree.sval; 
@@ -95,7 +97,7 @@ public class Videotheque
          NbEx = (int) entree.nval;
                
          unFilm = new UnDVD( LeTitre, NomPhoto, Texte, NbEx ); // nouveau dvd
-         desDVD.add(unFilm);												// on ajoute à la videotheque
+         desDVD.add(unFilm);												// on ajoute ï¿½ la videotheque
       						
       
          i++;
